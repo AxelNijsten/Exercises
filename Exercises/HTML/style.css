@@ -90,3 +90,10 @@ tr, th, td{
     background-color: #d9cbca;
     color: black;
   }
+
+  /*blocks font*/
+
+  .blocklist-item{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+  }
