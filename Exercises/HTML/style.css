@@ -1,0 +1,92 @@
+/*table border*/
+
+table{
+    border-collapse: collapse;
+
+}
+
+/*header cell*/
+th{
+    border: 1px solid #ede5e1;
+}
+
+th{
+    background-color: white;
+}
+td {
+    border: 1px solid #ede5e1;
+}
+tr:nth-child(odd) {background-color: #f2f2f2;}
+
+/*table font*/
+table{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*header line*/
+h1 { 
+    border-bottom: 1px solid #ede5e1; 
+}
+/*note line*/
+.Note{
+    font-style: italic;
+}
+
+.Note{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.index.html{
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+}
+.index.html{
+    background-color: #d9cbca;
+    color: black;
+}
+
+.start{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*h3*/
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*listed items*/
+li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*paragraphs*/ 
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*header 2*/
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h2{
+    border-bottom: 1px solid #ede5e1;
+}
+
+/*header 1*/
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*table padding*/
+
+tr, th, td{
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+/*highlights*/
+.highlight {
+    background-color: #d9cbca;
+    color: black;
+  }
