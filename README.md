@@ -1,2 +1,2 @@
-# https://axelnijsten.github.io/learning-markup/index.html
+# https://axelnijsten.github.io/learning-markup/
 
