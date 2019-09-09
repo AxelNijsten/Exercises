@@ -16,3 +16,11 @@ h1{
     color: black;
     text-decoration: underline;
 }
+
+
+img{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    
+}
