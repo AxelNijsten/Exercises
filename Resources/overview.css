@@ -1,12 +1,12 @@
 li,ul{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: red;
+    color: white;
     font-weight: bold;
 }
 
 /*background color*/
 body{
-    background-color: lightblue;
+    background-color: black;
 }
 
 /*header 1*/
