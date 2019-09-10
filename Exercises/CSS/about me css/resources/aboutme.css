@@ -1,0 +1,151 @@
+header{
+    color: #b6bfcf;
+    background-image: url(banner2.jpg);
+    height: 100%;
+
+}
+
+/*h1 text*/
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 500%;
+}
+
+
+/*background*/
+
+.background{    
+height: 80%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/*header 1 background*/
+.background header{
+background-color: #000000
+
+}
+
+
+
+
+
+img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  transition: all 1s ease;
+  max-width:100%;
+}
+
+
+/*bordered picture*/
+.bordered{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block; 
+    margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50%;
+  display: block;
+}
+.bordered:hover{
+    filter: blur(2px);
+    transform: scale(1.5);
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0.5, 0.5)
+}
+
+/*header*/
+
+h3{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+/*TABLE*/
+td, table, tr{
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #c98b20;
+    border-bottom: none;
+    
+}
+.question{
+background-color: orange;
+}
+
+
+/*margin*/
+.margin{
+    margin: 0;
+}
+
+td:hover{
+background-color: #eda82f;
+}
+
+.question:hover{
+    background-color: #f7b748
+}
+
+
+td::first-letter{
+    font-weight: bold;
+}
+
+footer{
+    height: 150px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+    transform: scale(1);
+    filter: blur(0px);
+    transition: background-color 0.5s ease;
+    color: darkgrey;
+    font-size: 50px;
+    
+}
+
+i:hover{
+    color: grey;
+
+}
+
+li{
+    display: inline;
+}
+
+ul.logolist{
+    list-style-type: none;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    padding-inline-start: 0px;
+}
