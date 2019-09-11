@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(210,210,210);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 425px;
+    margin: auto;
+    border-style: dashed;
+    border-width: 20px;
+    border-color: black;
+    border: 10px inset;
+}
+
+.container>div{
+background-color: rgb(210, 210, 210);
+width: 50px;
+height: 50px;
+margin: 0px;
+text-align: center;
+line-height: 55px;
+font-size: 30px;
+border: black 3px dotted;
+border-left-style: none;
+border-top-style: none;
+
+}
+
+body{
+
+    font-family: fantasy;
+}
+
+.cell-f{
+    background-color: rgb(240, 240, 240);
+
+}
+
+
+.cell-1{
+    color: blue;
+}
+
+.cell-2{
+    color: green;
+}
+
+.cell-3{
+    color: orange;
+}
+
+.cell-4{
+    color: red;
+}
+@font-face{
+    font-family: 'pixels';
+    src: url()
+}
+
+#notplayed{
+    background-color: rgb(210,210,210);
+
+}
+
+.cell-f2{
+    background-color: rgb(68, 68, 68);
+    color: rgb(210, 210, 210)
+}
+
+.cell-f2:hover{
+    color:green;
+    background-color: rgb(202, 202, 202);
+}
+
+.cell-b:hover{
+opacity: 1;
+}
+
+.cell-b{
+    opacity: 0;
+
+}
+
+#notplayed:hover i{
+    display: initial;
+}
+
+#notplayed i{
+    display: none;
+
+}
+
+.cell-f1{
+    background-color: rgb(68, 68, 68);
+    color: rgb(210, 210, 210)
+}
+
+.cell-f1:hover{
+    color:blue;
+    background-color: rgb(202, 202, 202);
+}
