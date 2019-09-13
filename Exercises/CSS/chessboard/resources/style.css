@@ -7,6 +7,8 @@
         text-align: center;
         border: 20px solid black;
         width: 500px;
+        
+       
     }
 
     .letters {
@@ -57,7 +59,7 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    background: lavender;
+    
     background-image: url("tile.png");
     background-repeat: repeat;
     background-size: 100px;
@@ -268,4 +270,10 @@ img{
 
 #id{
     grid-area: E7;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

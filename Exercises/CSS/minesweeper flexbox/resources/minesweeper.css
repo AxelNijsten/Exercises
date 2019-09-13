@@ -53,13 +53,12 @@ body{
 .cell-4{
     color: red;
 }
-@font-face{
-    font-family: 'pixels';
-    src: url()
-}
+
 
 #notplayed{
     background-color: rgb(210,210,210);
+    border-right: white inset 5px;
+    border-bottom: darkgray inset 5px;
 
 }
 
