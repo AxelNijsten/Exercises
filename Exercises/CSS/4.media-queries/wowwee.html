@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>media-queries</title>
+    <style>
+        /*begin header*/
+body{
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+        .flex-box1{
+            background-color: orangered;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            height: 100px;
+            /* position: fixed; */
+            padding-top: 5px;
+            
+        }
+        .block-menu{
+            display: flex;        
+        }
+@media screen and (min-width: 768px)  /*medium*/
+    {   
+    .flex-box1{
+            background-color: blue;
+            height: 150px;   
+    }
+    .kind{
+            display: flex;
+            /* height: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;  
+            width: 100px; */
+    }
+    .block-img{
+            display: none;         
+    }
+ } 
+ @media screen and (min-width: 1200px) {   /*large*/
+    .flex-box1{
+             background-color: green;
+    }  
+    .block-img{
+            display: block;  
+    }   
+               
+ }
+        .flex-box1 .block-text{
+            flex-wrap: wrap;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+        }
+        
+        .block-logo{
+            display: flex;
+            flex: 1;
+            align-items: center;
+        }
+
+        .block-text{
+            float: left;
+            width: auto;
+            padding: 10px;
+            box-sizing: border-box;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            flex: 0.5;
+            color: white;
+        }
+
+        .block-text:hover{
+            color: blue;
+        }
+        
+        .block-search{
+            width: 150px;
+            height: 40px;;
+            display: inline-block;
+            border: 3px solid white;
+            background-color: transparent;
+            border-radius: 25px;
+            box-sizing: border-box;
+        }
+
+        .navbar-img{
+            float: left;
+            width: auto;
+            border: 1px solid #2b2b2c;
+            padding: 10px;
+            box-sizing: border-box;/*zorgt dat de " kolomen naast elkaar komen*/
+            align-content: center;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+
+/*begin midden*/
+
+
+        .middel{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            background-color: blue;
+        }
+        h1{
+             
+            background-size: cover;
+            text-align: center;
+            color: blue;
+            text-shadow: 5px 10px 5PX grey;
+            font-size: 90px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         }
+         .products{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+
+         }
+         .products div{
+            
+            padding: 10px;
+            flex-basis: 30%;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+         }
+         .button-1{
+            background-color: white;
+            color: blue;
+            padding: 10px 15px;
+            border: 2px solid;
+            border-radius: 25px;
+            width: 160px;
+         }
+        .button-1:hover{
+            background: blue;
+            color: white;
+        }
+
+        .container-box-3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-box-3 div{
+            margin-top: 20px;
+            margin-bottom: 10px;
+           
+            padding: 10px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            flex-basis: 100%;
+        }
+
+        .button-2{
+            background-color: blue;
+            color: white;
+            padding: 10px 15px;    
+            border: 2px solid;
+            border-radius: 25px;
+            width: 160px;        
+        }
+        .button-2:hover{
+            background-color: white;
+            color: blue;
+        }
+/*begin midden 2*/
+        .tech{
+            background-color: #2b2b2c;
+            padding-top: 100px;
+            padding-bottom: 35px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items:flex-start;
+        }
+
+        h2{
+            text-align: center;
+            color: blue;
+            font-size: 90px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top: 0px;
+        }  
+
+        p{
+            margin: 0px 0px;
+            margin-left: 40px;
+            text-align: left;
+        }
+       h3{
+            color: white;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-left: 40px;
+            margin-bottom: 0px;
+            margin-top: 100px;
+        }
+       .uitleg{
+            color: white;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+        .button-4{
+            background-color: white;
+            color: blue;
+            padding: 10px 15px;
+            border: 2px solid;
+            border-radius: 25px;
+            width: 160px;
+            margin-left: 35px;
+         }
+        .button-4:hover{
+            background: blue;
+            color: white;
+        }
+
+       /* begin midden 3 */
+       .container-5-box{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            background-color: white;
+            background-size: 100%;
+            
+        }
+        .spel{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: center;
+            width: 100%;
+            padding-top: 50px;
+            
+        }
+
+         .spel div {
+           
+            padding: 10px;
+            flex-basis: 25em;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 18px; 
+           
+        }
+
+        .spel img{
+           margin-left: auto;
+           margin-right: auto;
+           padding-bottom: 30px; 
+           
+        }
+
+         .button-3{
+            background-color: white;
+            color: blue;
+            padding: 10px 15px;
+            border: 2px solid;
+            border-radius: 25px;
+            width: 160px;
+            margin: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .button-3:hover{
+            background: blue;
+            color: white;
+        }
+        h6{
+            color: black;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            margin-bottom: 0px;
+            padding-bottom: 0;
+        }
+
+        .featured{
+            background-size: cover;
+            margin-top: 0px;
+            padding-top: 0;
+            font-size: 90px;
+            color: blue;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 5px 10px 5PX grey;
+        }
+
+
+ 
+
+ /* begin midden 4 */
+     
+       .midden-4{
+            background-size: cover;
+            margin-top: 0px;
+            padding-top: 0;
+            font-size: 90px;
+            color: white;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 5px 10px 5PX grey;
+            background-color: black;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            align-items: center;
+            padding: 20px;
+        }
+        .container-6-box{
+            margin-left: 3%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: white; 
+            height: 749px;
+            flex-basis: 70%;
+        }
+        
+        .newspic1{
+            display: flex;
+            width: 100%;
+        }
+        .newspic1 img{
+            width: 100%;
+        }
+
+        .container-6-box:nth-of-type(1) {
+            flex-shrink: 0;
+            margin-left: 0%;
+        }
+       
+        .auteur{
+            margin-top: 120px;
+            font-size: 10px;
+            color: lightskyblue;
+        }
+
+        a {
+            padding: 15px 25px;
+        } 
+       
+        /* begin footer*/
+       
+    .footer {
+    background: #181818;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+    .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#footernews {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+#footerlinks {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+@media only screen and (min-width: 768px) {
+    #footernews {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    #footerlinks {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
+
+#footernews {
+    padding: 25px 20px;
+    background: #212121;
+}
+
+@media only screen and (min-width: 768px) {
+    #footernews {
+        padding: 40px 25px;
+        background: none;
+    }
+}
+
+
+#footernews {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto 200px;
+    align-items: stretch;
+}
+
+#footertext {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+#footerinput {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#footerbutton {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#footercheck {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+
+#footernews h3 {
+    color: #3babe4;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#footernews p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+#footerinput input {
+    padding: 15px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #4d4d4d;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+#footerinput input::placeholder {
+    color: white;
+}
+
+
+#footerlinks {
+    padding: 40px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    #footerlinks {
+        padding: 40px 25px;
+    }
+}
+
+
+#footerlinks {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+#footerlinkslogo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#footerlinksbutton {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+}
+
+#footerlinksnav {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+#footerlinkscopy {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+
+#footerlinkslogo img {
+    width: 100px;
+    height: auto;
+}
+
+#footerlinksnav {
+    margin: 25px 0 0 0;
+}
+
+#footerlinkscopy {
+    color: #c0c0c0;
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    #footerlinkslogo img {
+        width: 200px;
+    }
+}
+
+
+    </style>
+</head>
+
+
+<!-- begin header -->
+<body>
+    <div class="flex-box1">
+    
+        <div class="block-logo">
+            <img src="resources/logowhite-2.svg" style= "width: 200px; height: 100px;">
+        </div>
+         <div class="block-menu">
+            <div class="block-text">
+                <div>Products </div>
+            </div>
+            <div class="block-text">
+                <div>About </div>
+            </div>
+             <div class="block-text">
+                <div>News </div>
+            </div>
+            <div class="block-text">
+                <div>Store </div>
+            </div>
+        </div>
+        
+                <input class="block-search" type="text" name= "zoek">
+          
+        
+
+
+
+        <div class="block-img">
+            <div class="navbar-img"><img src="resources/icon.facebook.png"></div>
+
+            <div class="navbar-img"><img src="resources/icon.twitter.png"></div>
+
+            <div class="navbar-img"><img src="resources/icon.youtube.png"></div>
+
+            <div class="navbar-img"><img src="resources/icon.instagram.png"></div>
+       </div>
+   
+    </div>
+        <div class="kind"> <img src= "resources/kindmetbabyshark.jpg" style= "width: 100%;"></div>
+
+
+
+        <!-- begin midden 1-->
+
+
+
+<div class="middle">
+        <img src= "resources/line.heading.left.png" style= "width: 100%; height: 10px;">
+    <h1>PRODUCT CATEGORIES</h1>
+
+    <div class="products">
+
+        <div class="container-2-box">
+                <img src="resources/aap.png">
+        <div>Fingerlings</div>
+        <br>
+        <input class= "button-1" type="submit" value="FIND OUT MORE" name= " ">
+        </div>
+        <div class="container-2-box">
+            <img src="resources/dino.png">
+        <div>Untamed</div>
+        <br>
+        <input class= "button-1" type="submit" value="FIND OUT MORE" name= " ">
+        </div>
+        <div class="container-2-box">
+            <img src="resources/plush.png">
+        <div>+More</div>
+        <br>
+        <input class= "button-1" type="submit" value="FIND OUT MORE" name= " ">
+        </div>
+    </div>
+    
+    <div class="container-box-3">
+        <div>VIEW ALL CATEGORIES</div>
+        <input class= "button-2" type="submit" value="FIND OUT MORE" name= " ">
+        <br>
+        <br>
+        </div>
+    </div>
+   
+
+
+  <!-- begin midden 2-->
+
+    <div class="tech">
+            <div class="container-4-box">
+               
+                <h3>WOWWEE LABS</h3>
+                <h2><p>Bringing</p><p> Tech to Toys</p></h2>
+
+                <p class="uitleg">Explore our history including technology innovations and product launch</p>
+                <p class="uitleg"> highlights dating back to the original Robosapien. Learn more about how</p>
+                <p class="uitleg">we innovate and view concept sketches and prototypes for some of our</p> 
+                <p class="uitleg">latest products. Access our free SDKs to develop your own apps to control</p>
+                <p class="uitleg"> our products. </p>
+                   <br>
+                <input class= "button-4" type="submit" value="FIND OUT MORE" name= " ">
+            </div> 
+
+            <div class="container-4-box">
+                    <img src="resources/robot.png">   
+            </div>
+    </div>
+
+<!-- begin midden 3-->
+
+  <h6>THE LATEST & GREATEST</h6>
+  <div class="featured">
+        FEATURED PRODUCTS
+</div>
+<div class="spel">
+
+    <div class="container-5-box">
+            <img src="resources/babysharkplush.png" style= "width: 246.91px; height: 200px;">
+            <img src="resources/babysharklogo.png" style="width: 252.83px; height: 50px;">
+         <div>Meet the famous Shark Family singing plush dolls, cubes, and dancing doll. You won't be able to cuddle them enough...
+         </div>
+    
+         <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
+    </div>
+
+    <div class="container-5-box">
+            <img src="resources/tijgers.png"style= "width: 250px; height: 200px;">
+            <img src="resources/alive.png" style="width: 252.83px; height: 50px;">
+        <div>Playing with your cub is like having a real baby animal to take care of and nurture. Alive Cubs react with baby... 
+        </div>
+    
+         <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
+    </div>
+
+    <div class="container-5-box">
+        <img src="resources/wtsproduct.png" style= "width: 245.98px; height: 200px;">
+        <img src="resources/wtslogo.png" style="width: 252.83px; height: 50px;">
+        <div>Coming August 2018: The Party Game That Stinks!
+        What’s That Smell?™ is the hilariously fragrant new scratch 'n sniff guessing game that throws your sense of smell...
+        </div>
+    
+        <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
+    </div>
+    
+    
+    
+</div>
+
+
+<!-- begin midden 4-->
+
+<div class="midden-4">
+        NEWS
+</div>
+<div class="box">
+
+    <div class="container-6-box" class="bigcontainer">
+        <div class="newspic1">   
+            <img src="resources/gelukskoekje.png">
+        </div>   
+         <div>Kids these days get all the luck. (Literally.)
+              Kids these days get all the luck. (Literally.) Lucky Fortune Bracelets From WowWee Are The Sweetest Surprise Accessory. 
+         </div>
+    
+         <a href="https://wowwee.com/news/in-the-news/kids-these-days-get-all-the-luck-literally">READ MORE</a> 
+                  
+    </div>
+
+    <div class="container-6-box" class="smallcontainer">
+        <div class="newspic1">
+            <img src="resources/narwal-wit.jpg">
+        </div>
+        <div>FINGERLINGS NARWHALS COVERED BY PARENTS.COM
+              The new Fingerlings Narwhal is the latest toy that will make you fall in love!
+        </div>
+    
+        <a href="https://wowwee.com/news/in-the-news/fingerlings-narwhals-covered-by-parentscom">READ MORE</a> 
+                  
+    </div>
+
+    
+    
+    
+    
+</div>
+        
+     </div> <!--einde div class "news-container" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>  <!--einde van alle midden -->
+<footer class="footer">
+
+    <div id="footernews" class="footeritem">
+
+        <div id="footertext" class="footeritem">
+            <h3>Want WowWee updates and offers?</h3>
+            <p>We'll send you WowWee news, product announcements and special offers.</p>
+        </div>
+
+        <div id="footerinput" class="footeritem">
+            <input type="text" name="email-newsletter" placeholder="Your email adress">
+        </div>
+
+        <div id="footerbutton" class="footeritem">
+            <input class="button btnColor2" type="button" value="sign up">
+        </div>
+
+        <div id="footercheck" class="footeritem">
+            <input type="checkbox" name="checknewsletter">
+            <span>I am over 13 years old</span>
+        </div>
+    </div>
+    <!-- footer--newsletter -->
+
+    <div id="footerlinks" class="footer-item">
+
+        <div id="footerlinkslogo" class="footerlinksitem">
+            <a href="index.html"><img src="resources/logogrey.png" alt="logo"></a>
+        </div>
+
+        <div id="footerlinksbutton" class="footerlinksitem">
+            <button class="button btnColor3">Where to buy</button>
+        </div>
+
+        <div id="footerlinksnav" class="footerlinksitem">
+            <nav class="nav">
+                <ul>
+                    <li>Contact</li>
+                    <li>Support</li>
+                    <li>Warranty</li>
+                    <li>Privacy</li>
+                    <li>Legal</li>
+                    <li>Careers</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="footerlinkscopy" class="footerlinksitem">
+            <p class="copyright">© 2019 WowWee Group Limited. All Rights Reserved.</p>
+        </div>
+
+    </div>
+        
+
+</div>
+
+    
+
+
+</body>
+</html>
